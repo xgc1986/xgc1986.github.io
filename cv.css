@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Arimo:wght@400;700&family=Source+Code+Pro&display=swap');
+
+* {
+    font-family: 'Source Code Pro', monospace;
+}
+
+a {
+    color: #EEE;
+    font-weight: bold;
+}
+
+a i {
+    font-size: 2em;
+    margin: 0.67em 0.335em;
+}
+
+a:hover {
+    color: white;
+}
+
+p::before {
+    content: '➜  ';
+    color: #16C60C
+}
+
+body {
+    background: #0C0C0C;
+    color: #CCC
+}
+
+.personalinfo {
+    display: inline-block;
+    border-width: 1px;
+    border-color: #EEE;
+    color: #EEE;
+    border-style: solid;
+    padding: .76em;
+}
+
+.personalinfo-name {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 2em;
+}
+
+.section {
+    padding-top: 0.67em;
+    margin-top: .76em;
+    border-top: solid 1px #444;
+}
+
+.section-title {
+    display: block;
+    color: #EEE;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.section-content {
+    padding-left: 2em;
+}
+
+.section-subsection-title {
+    display: flex;
+    color: #EEE;
+    font-weight: bold;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #EEE;
+    padding: 0.67em;
+    width: fit-content;
+}
+
+.section-subsection-title img {
+    height: 50px;
+    margin-right: 0.67em;
+}
+
+.section-subsection-date {
+    font-weight: 300;
+    opacity: 0.7;
+}
+
+.cursor > span {
+    animation: blink 2s steps(2, start) infinite;
+    font-weight: bold;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+.legend {
+    display: flex;
+    width: fit-content;
+    white-space: nowrap;
+    flex-wrap: wrap;
+}
+
+.legend > div {
+    border: solid 1px #EEE;
+    padding: 0.67em;
+    margin-right: 0.67em;
+}
+
+.section-expertise {
+    display: flex;
+    flex-wrap: wrap;
+    white-space: nowrap;
+}
+
+.section-expertise-item {
+    border: solid 1px #EEE;
+    display: flex;
+    flex-direction: column;
+    margin: 0.67em;
+    padding: 0.337em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-expertise-item:hover {
+    border: solid 1px #EEE;
+    background-color: #EEE;
+    color: #0C0C0C;
+    display: flex;
+    flex-direction: column;
+    margin: 0.67em;
+    padding: 0.337em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-expertise-item > i {
+    font-size: 3rem;
+}
+
+.yellow {
+    color: #C7C500;
+}
